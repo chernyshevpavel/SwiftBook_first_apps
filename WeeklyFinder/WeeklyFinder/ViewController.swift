@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var yearTextField: UITextField!
     @IBOutlet weak var resultLable: UILabel!
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func findDay(_ sender: UIButton) {
         guard let day = dateTextField.text, let month = monthTextField.text, let year = yearTextField.text else { return }
         let calendar = Calendar.current
@@ -29,10 +33,5 @@ class ViewController: UIViewController {
         let weekday = dateFormatter.string(from: date)
         resultLable.text = weekday.capitalized
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
 }
 
