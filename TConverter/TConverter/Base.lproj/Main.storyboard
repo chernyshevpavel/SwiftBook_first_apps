@@ -89,7 +89,7 @@
                             <constraint firstItem="4rq-qB-Gl1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="312" id="K98-pA-Ee6"/>
                             <constraint firstItem="4rq-qB-Gl1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L4X-mI-Em1"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="4rq-qB-Gl1" secondAttribute="leading" constant="44" id="NQs-Gl-2U6"/>
-                            <constraint firstItem="Loa-9R-OYe" firstAttribute="leading" secondItem="MdN-db-bay" secondAttribute="trailing" constant="100" id="VkI-eq-07c"/>
+                            <constraint firstItem="Loa-9R-OYe" firstAttribute="leading" secondItem="BCk-km-KLI" secondAttribute="trailing" constant="-13.333333333333371" id="VkI-eq-07c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="4rq-qB-Gl1" secondAttribute="top" constant="44" id="YNE-oA-oNd"/>
                             <constraint firstItem="BCk-km-KLI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YOi-Dj-84c"/>
                             <constraint firstItem="Loa-9R-OYe" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="44" id="YjX-IW-Euz">
@@ -216,9 +216,7 @@
                     </view>
                     <connections>
                         <outlet property="cLabel" destination="MdN-db-bay" id="zhh-9Z-kEy"/>
-                        <outlet property="celsiusLablel" destination="MdN-db-bay" id="RAE-w5-NaZ"/>
                         <outlet property="fLabel" destination="FTy-51-pwh" id="NDy-VC-9hu"/>
-                        <outlet property="faringateLabel" destination="FTy-51-pwh" id="hAk-HK-Kn1"/>
                         <outlet property="slider" destination="BCk-km-KLI" id="J1X-Es-SXG"/>
                     </connections>
                 </viewController>
