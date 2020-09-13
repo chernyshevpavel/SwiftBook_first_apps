@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,20 +12,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="minus" translatesAutoresizingMaskIntoConstraints="NO" id="4rq-qB-Gl1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="-44" y="0.0" width="1124" height="1345"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdN-db-bay">
-                                <rect key="frame" x="178.66666666666666" y="371" width="57" height="42"/>
+                                <rect key="frame" x="355.5" y="435" width="57" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BCk-km-KLI">
-                                <rect key="frame" x="63" y="433" width="288" height="31"/>
+                                <rect key="frame" x="240" y="497" width="288" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="284" id="Psj-UF-B7E"/>
                                     <constraint firstAttribute="width" constant="284" id="iC8-ah-IQe"/>
@@ -61,13 +61,13 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTy-51-pwh">
-                                <rect key="frame" x="171.66666666666666" y="483" width="71" height="42"/>
+                                <rect key="frame" x="348.5" y="547" width="71" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Loa-9R-OYe">
-                                <rect key="frame" x="86" y="95" width="242" height="45"/>
+                                <rect key="frame" x="512.5" y="20" width="299.5" height="45"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
