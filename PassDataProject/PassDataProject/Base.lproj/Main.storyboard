@@ -38,7 +38,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCi-me-p8F">
-                                <rect key="frame" x="141" y="601" width="132" height="36"/>
+                                <rect key="frame" x="141" y="622" width="132" height="36"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132" id="sz2-fv-JG3"/>
@@ -51,23 +51,32 @@
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZu-Zq-ZEj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6I-PU-z0A">
+                                <rect key="frame" x="207" y="739" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cCi-me-p8F" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2fg-p3-GV1"/>
                             <constraint firstItem="ENm-hv-Be6" firstAttribute="top" secondItem="r8z-ul-MId" secondAttribute="bottom" constant="105" id="AdK-2l-XKy"/>
+                            <constraint firstItem="d6I-PU-z0A" firstAttribute="top" secondItem="cCi-me-p8F" secondAttribute="bottom" constant="81" id="FBR-Sz-GR8"/>
                             <constraint firstItem="wKa-cM-zLQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IXY-Ka-S2R"/>
                             <constraint firstItem="wKa-cM-zLQ" firstAttribute="top" secondItem="ENm-hv-Be6" secondAttribute="bottom" constant="26" id="Whd-pK-Umx"/>
                             <constraint firstItem="r8z-ul-MId" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="dlC-8X-gRP"/>
+                            <constraint firstItem="d6I-PU-z0A" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eIf-pa-lhe"/>
                             <constraint firstItem="r8z-ul-MId" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fAp-eF-1ls"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cCi-me-p8F" secondAttribute="bottom" constant="225" id="ir6-7P-Hbh"/>
                             <constraint firstItem="ENm-hv-Be6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wMP-VL-Wd0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d6I-PU-z0A" secondAttribute="bottom" constant="123" id="yuk-5u-Gsn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="loginTF" destination="ENm-hv-Be6" id="6xd-K1-mdt"/>
                         <outlet property="passwordTF" destination="wKa-cM-zLQ" id="Y70-qG-KNM"/>
+                        <outlet property="resultLabel" destination="d6I-PU-z0A" id="Vic-SZ-lDK"/>
                         <segue destination="dvz-Vs-FHb" kind="show" identifier="detailSegue" id="pcL-HS-zQA"/>
                     </connections>
                 </viewController>
@@ -116,9 +125,11 @@
                     <navigationItem key="navigationItem" id="9l8-N3-sPR"/>
                     <connections>
                         <outlet property="label" destination="dhf-bP-CZp" id="LvI-9q-MCq"/>
+                        <segue destination="gw7-Jz-QlV" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToMainScreenWithSegue:" id="lAe-j8-UIM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4vq-ea-hZM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gw7-Jz-QlV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="924.63768115942037" y="128.57142857142856"/>
         </scene>
