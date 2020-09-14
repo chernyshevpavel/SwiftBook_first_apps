@@ -49,7 +49,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZu-Zq-ZEj"/>
-                                    <segue destination="dvz-Vs-FHb" kind="show" id="zwP-hl-HHn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,6 +68,7 @@
                     <connections>
                         <outlet property="loginTF" destination="ENm-hv-Be6" id="6xd-K1-mdt"/>
                         <outlet property="passwordTF" destination="wKa-cM-zLQ" id="Y70-qG-KNM"/>
+                        <segue destination="dvz-Vs-FHb" kind="show" identifier="detailSegue" id="pcL-HS-zQA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
